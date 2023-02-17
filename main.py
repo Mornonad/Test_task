@@ -8,10 +8,9 @@ from py_scripts import functions as fun
 with open(f'{os.getenv("FILES_PATH_PREFIX")}\\final.csv', encoding='utf-8', mode='r') as f:
     df = pd.read_csv(f, sep=',', header=0, parse_dates=['DATE_OF_ARRIVAL'],low_memory=False)
 
-# Замена типа данных
+# Удаление некорректных данных и замена типа данных
 
-df.loc[df.TERRITORY_CODE == 'TERRITORY_CODE'] = np.nan
-df.loc[df.index == 482237] = np.nan
+df.drop(df.loc[df.TERRITORY_CODE != '22701000'].index, inplace=True)
 df[['DAYS_CNT', 'VISITORS_CNT']] = df[['DAYS_CNT', 'VISITORS_CNT']].apply(pd.to_numeric, errors='coerce').astype(pd.Int64Dtype())
 df['DATE_OF_ARRIVAL'] = pd.to_datetime(df['DATE_OF_ARRIVAL'], format="%Y-%m-%d", errors='coerce')
 df['SPENT'] = pd.to_numeric(df['SPENT'], errors='coerce')
