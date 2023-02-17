@@ -18,4 +18,4 @@
 
   2. CSV выгрузка загружается в ту же папку, где находится основная программа - main.py.
   3. Для автоматического запуска по расписанию, можно использовать Cron.
-  4. Подготовленный дашборд можно найти по ссылке(https://datalens.yandex.ru/12xjxqvxv0yir-sostoyanie-turizma-v-g-nizhniy-novgorod-na-1-polugodie)
+  4. Подготовленный дашборд можно найти по [ссылке](https://datalens.yandex.ru/12xjxqvxv0yir-sostoyanie-turizma-v-g-nizhniy-novgorod-na-1-polugodie)
