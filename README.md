@@ -25,3 +25,9 @@
   - Общая статистика;
   - Информация о туристах;
   - Информация о расходах туристов во время поездки в Нижний Новгород.
+  
+  На основе этих данных можно сделать выводы о том, в какие месяцы больше поток туристов, какой возрас большинства туристов, каков их доход и тд.
+  
+ <img src="https://github.com/Mornonad/Test_task/blob/main/resourses/1.PNG" alt= “[Дэшборд1” width="50%" height="50%">
+    ![Дэшборд2](https://github.com/Mornonad/Test_task/blob/main/resourses/2.PNG)
+      ![Дэшборд3](https://github.com/Mornonad/Test_task/blob/main/resourses/3.PNG)
